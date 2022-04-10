@@ -31,6 +31,8 @@ button {
   background-color: white;
   border-color: fuchsia;
   padding: 10px;
+  width: 120px;
+  height: 50px;
 }
 
 /* Meniu */
@@ -49,6 +51,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
 }
 
 #header > a {
@@ -150,8 +153,8 @@ section {
 }
 
 .width-25 img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 2500px;
 }
 
 .row {
@@ -174,6 +177,8 @@ section {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 150px 100px;
       grid-template-rows: 150px 100px;
+  margin: 0em;
+  padding: 0;
 }
 
 /* Galery*/
@@ -209,6 +214,10 @@ section {
           justify-content: space-between;
 }
 
+.soc {
+  margin-right: 150px;
+}
+
 /* Contact */
 /* Apacia */
 #footer ul {
@@ -234,7 +243,7 @@ section {
 
 /* Apacia */
 /* Mobile */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   #header {
     display: none;
   }
