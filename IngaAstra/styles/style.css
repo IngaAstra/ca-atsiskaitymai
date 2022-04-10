@@ -2,21 +2,39 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Arial;
+  color: grey;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  font-size: 12px;
+  color: gray;
+}
+
+h5 {
+  font-size: 8px;
+  color: orange;
 }
 
 body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: white;
-  border-color: #d41655;
+  border-color: fuchsia;
+  padding: 10px;
 }
 
 /* Meniu */
-a {
+#header a {
   text-decoration: none;
   color: black;
   font-size: 14px;
@@ -66,17 +84,17 @@ a {
 /* Meniu */
 /* Top */
 #top {
-  padding: 50px;
+  padding: 100px 20px;
 }
 
 #top header {
-  color: #d41655;
+  color: fuchsia;
   font-weight: bold;
   font-size: 10px;
 }
 
 #top img {
-  width: 240px;
+  width: 300px;
 }
 
 #top .container {
@@ -90,18 +108,22 @@ a {
 }
 
 #top h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 /* Top */
 /* Free */
 #free .container {
-  border: 5px solid orange;
+  border: 5px orange;
   border-radius: 5px;
   padding: 10px;
   background-image: -webkit-gradient(linear, left bottom, right top, from(violet), color-stop(red), color-stop(orange), color-stop(yellow), to(green));
   background-image: linear-gradient(to top right, violet, red, orange, yellow, green);
+}
+
+#free p {
+  color: black;
 }
 
 /* Free */
@@ -115,6 +137,11 @@ a {
           justify-content: space-between;
 }
 
+#promo img {
+  width: 100px;
+  height: 50px;
+}
+
 /* Promo */
 /* Galery*/
 section {
@@ -123,8 +150,8 @@ section {
 }
 
 .width-25 img {
-  width: 150px;
-  height: 150px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .row {
@@ -137,7 +164,16 @@ section {
 }
 
 .row-block {
-  margin: 10px;
+  margin: 5px;
+}
+
+.price {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 150px 100px;
+      grid-template-rows: 150px 100px;
 }
 
 /* Galery*/
@@ -157,12 +193,23 @@ section {
 }
 
 #soon header {
-  color: #d41655;
+  color: fuchsia;
   font-weight: bold;
   font-size: 10px;
 }
 
 /* Soon */
+/* Contact */
+#contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Contact */
 /* Apacia */
 #footer ul {
   list-style: none;
