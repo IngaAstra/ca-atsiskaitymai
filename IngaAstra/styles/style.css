@@ -51,7 +51,6 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
 }
 
 #header > a {
@@ -175,10 +174,12 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 150px 100px;
-      grid-template-rows: 150px 100px;
-  margin: 0em;
-  padding: 0;
+  -ms-grid-rows: 10px 100px;
+      grid-template-rows: 10px 100px;
+  margin: 0;
+  padding: 5px;
+  background-color: #eeecec;
+  border-radius: 20px;
 }
 
 /* Galery*/
@@ -191,6 +192,10 @@ section {
   -ms-grid-rows: 150px 100px;
       grid-template-rows: 150px 100px;
       grid-template-areas: "item-1 item-2";
+  border-top: 1px solid #dfdcdc;
+  -webkit-border-after: 1px solid #dfdcdc;
+          border-block-end: 1px solid #dfdcdc;
+  padding: 25px;
 }
 
 #soon img {
@@ -212,6 +217,15 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#contact a {
+  text-decoration: none;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
 }
 
 .soc {
@@ -243,7 +257,7 @@ section {
 
 /* Apacia */
 /* Mobile */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 429px) {
   #header {
     display: none;
   }
@@ -277,7 +291,6 @@ section {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "soc soc" "about nft" "contact social";
   }
   /* Burgeris */
   /* Nepavyksta i desine ir palikti logo */

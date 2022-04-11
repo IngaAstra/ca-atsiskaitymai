@@ -34,6 +34,7 @@ button {
   height: 50px;
 }
 
+
 /* Meniu */
 
 #header a {
@@ -47,7 +48,6 @@ button {
   height: 3.25em;
   width: 100%;
   justify-content: space-between;
-  position: fixed;
 }
 
 #header > a {
@@ -145,6 +145,8 @@ section {
   padding: 1em;
 }
 
+
+
 .width-25 img {
   max-width: 250px;
   max-height: 250px;
@@ -162,10 +164,13 @@ section {
 .price {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 100px;
-  margin: 0em;
-  padding: 0;
+  grid-template-rows: 10px 100px;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(238, 236, 236);
+  border-radius: 20px;
 }
+
 /* Galery*/
 
 /* Soon */
@@ -175,6 +180,9 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 150px 100px;
   grid-template-areas: "item-1 item-2";
+  border-top: 1px solid rgb(223, 220, 220);
+  border-block-end: 1px solid rgb(223, 220, 220);
+  padding: 25px;
 }
 
 #soon img {
@@ -194,6 +202,13 @@ section {
 #contact .container {
   display: flex;
   justify-content: space-between;
+}
+
+#contact a {
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  margin: 5px;
 }
 
 .soc {
@@ -219,7 +234,7 @@ section {
 /* Apacia */
 
 /* Mobile */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 429px) {
   #header {
     display: none;
   }
@@ -250,14 +265,10 @@ section {
     height: 100px;
   }
 /* Veikia bet nepavyksta sutvarkyti 2/1 */
-#contact .container {
+ #contact .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 
-  "soc soc"
-  "about nft"
-  "contact social";
-}
+} 
 
 /* Burgeris */
 /* Nepavyksta i desine ir palikti logo */
