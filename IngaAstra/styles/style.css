@@ -154,7 +154,7 @@ section {
 
 .width-25 img {
   max-width: 250px;
-  max-height: 2500px;
+  max-height: 250px;
 }
 
 .row {
@@ -243,7 +243,7 @@ section {
 
 /* Apacia */
 /* Mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   #header {
     display: none;
   }
@@ -257,6 +257,30 @@ section {
     padding: 0 15px 0 15px;
     width: 100%;
   }
+  /* Veikia bet nepavyksta 1 isimti */
+  #promo .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #promo img {
+    width: 300px;
+    height: 100px;
+  }
+  /* Veikia bet nepavyksta sutvarkyti 2/1 */
+  #contact .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "soc soc" "about nft" "contact social";
+  }
+  /* Burgeris */
+  /* Nepavyksta i desine ir palikti logo */
   #headerToggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -264,9 +288,9 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 2.25em;
     width: 2.25em;
     left: 0;
